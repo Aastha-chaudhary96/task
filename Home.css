@@ -6,21 +6,20 @@
     box-sizing: border-box;
     font-family: 'Roboto';
     font-weight: 400;
-    overflow: hidden;
 }
 /* header - Section ( N a v b a r ) */
 .header{
     position: absolute;
-    width: 100%;
+    width: 100vw;
     height: 100px;
-    left: 8%;
+    margin-left: 8%;
     background: #1AC073;
     color: white;
+    overflow: hidden;
 }
 .navbar{
     position: absolute;
     display: flex;
-    flex-wrap: wrap;
     width: 100%;
     overflow: hidden;
     top: 3rem;
@@ -109,3 +108,58 @@
 
 /* kitchen section */
 
+
+/* Contact Us */
+.contactus{
+    position: relative;
+    margin-top: 8%;
+    left: 8%;
+    display: flex;
+    width: 84%;
+}
+.queryinfo{
+    width: 70%;
+    line-height: 2rem;
+}
+.queryinfo p{
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+#name,#email{
+    width: 42%;
+    height: 15%;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    margin-right: 1%;
+    font-size: 20px;
+    padding-left: 2.5%;
+    border: 1px solid gray;
+}
+#textarea{
+    padding: 2.5%;
+    border-radius: 10px;
+    font-size: 20px;
+    margin-bottom: 3%;
+}
+button{
+    width: 29%;
+    height: 15%;
+    font-size: 20px;
+    border-radius: 10px;
+    color: white;
+    background-color: #1AC073;
+    border: none;
+}
+
+.contactimage{
+    margin-left: 0px;
+    margin-right: auto;
+}
+.contactimage img{
+    width: 604px ;
+    height: 503px;
+}
+#df{
+    height: 30%;
+}
