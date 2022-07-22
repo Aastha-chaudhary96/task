@@ -1,15 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Roboto';
+    font-weight: 400;
+    overflow: hidden;
 }
 /* header - Section ( N a v b a r ) */
-header{
+.header{
     position: absolute;
     width: 100%;
-    height: 80px;
+    height: 100px;
+    left: 8%;
     background: #1AC073;
     color: white;
 }
@@ -19,79 +23,89 @@ header{
     flex-wrap: wrap;
     width: 100%;
     overflow: hidden;
-    top: 26px;
+    top: 3rem;
 }
-.logo{
-    margin-left: 10rem;
+.logo {
     margin-right: auto;
 }
+.logo h1{
+    font-size: 40px;
+    font-family: 'Squada One';
+}
 .nav-option{
+    position: relative;
     display: flex;
     justify-content: center;
+    margin-left: 12%;
+    margin-top: 2%;
 }
 .nav-option li{
-
     list-style-type: none;
-    padding: 0 10px;
-    font-size: 20px;
+    padding:0 30px;
+    font-size: 22px;
 }
 .searchcart{
-    margin-left: auto;
-    margin-right: 10rem;
+    margin-left:  auto;
+    margin-right: auto;
+
     display : right;
 }
 .searchcart img{
-    padding: 10px;
+    padding-right: 60px; 
 }
-
 /* landing section */
 .landing_section{
     display: flex; 
     background-color: #1AC073;
     color: white;
     width: 100%;
-    height: 800px;
+    height: 100;
 }
 .landing_content{
-    width: 50%;
     float: left;
-    width: 534px;
-    height: 317px;
-    margin-left: 132px;
-    margin-top: 250px;
-
+    width: 40%;
+    margin-left: 8%;
+    margin-top: 18%;
+    overflow: hidden;
 }
 .landing_content h1{
-    font-size: 70px;
-    line-height: 82px;
+    font-size: 88px;
 }
 .landing_content p{
+    width: 70%;
     font-size: 18px;
-    margin-bottom: 2rem;
+    margin-bottom: 3.2rem;
+    letter-spacing: 1px;
+    margin-top: 20px;
 }
 .landing_content input{
     border-radius: 10px;
-    width: 300px;
-    height: 50px;
+    width: 49%;
+    height: 11%;
+    font-size: 18px;
     border: none;
     padding: 20px;
 }
 .landing_content button{
     background: #F3BA00;
     color: white;
-    width: 100px;
-    height: 50px;
+    width: 19%;
+    height: 11%;
     border: none;
     position: relative;
-    left: -30px;
+    left: -12px;
+    font-size: 20px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
 }
 .cookingimage{
-    width: 50%;
-    float: left;
-    margin: auto;
+    margin-top: 17.3%;
+    margin-left: 1.7%;
 }
 .cookingimage img{
-    float: right;
+    width: 810px;
+    height: 748px;
 }
+
+/* kitchen section */
+
