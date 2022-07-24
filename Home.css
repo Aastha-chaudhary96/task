@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Squada+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Squada+One&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -22,7 +22,7 @@
     display: flex;
     width: 100%;
     overflow: hidden;
-    top: 3rem;
+    top: 3.2rem;
 }
 .logo {
     margin-right: auto;
@@ -35,18 +35,26 @@
     position: relative;
     display: flex;
     justify-content: center;
-    margin-left: 18%;
-    margin-top: 1.6%;
+    margin-left: 6%;
+    margin-top: 0.4%;
 }
-.nav-option li{
-    list-style-type: none;
+.nav-option a{
+    color: white;
+    text-decoration: none;
     padding:0 25px;
     font-size: 22px;
+}
+#menu-btn{
+    display: none;
 }
 .searchcart{
     margin-left:  auto;
     margin-right: 9%;
     margin-top: 0.5%;
+}
+.searchcart i{
+    transform: translate(-50%,-30%);
+    width: 30px;
 }
 .searchcart img{
     padding-right: 50px; 
@@ -63,7 +71,7 @@
     float: left;
     width: 40%;
     margin-left: 10%;
-    margin-top: 18%;
+    margin-top: 18.3%;
     overflow: hidden;
 }
 .landing_content h1{
@@ -71,22 +79,23 @@
 }
 .landing_content p{
     width: 70%;
-    font-size: 18px;
-    margin-bottom: 3rem;
-    margin-top: 3.5%;
+    font-size: 22px;
+    margin-bottom: 7.2%;
+    letter-spacing: -0.012em;
+    margin-top: 2.7%;
 }
 .landing_content input{
     border-radius: 10px;
-    width: 50%;
+    width: 50.8%;
     height: 9%;
     font-size: 18px;
     border: none;
-    padding: 21px;
+    padding: 19px;
 }
 .landing_content button{
     background: #F3BA00;
     color: white;
-    width: 20%;
+    width: 19%;
     height: 9%;
     border: none;
     position: relative;
@@ -107,7 +116,64 @@
 
 /* kitchen section */
 
+/* Service Section */
+.service_section{
+    text-align: center;
+    font-family: 'Montserrat';
+    padding-top: 5.3%;
+    padding-bottom: 7%;
+    position: relative;
+    background-image: linear-gradient(white 65%, #2EBF91 35%);
+}
+.service_section h1{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 58px;
+    letter-spacing: 1px;
+    line-height: 65px;
+    color: #252B42;
+}
+.service_section p{
+    width: 32%;
+    font-weight: 500;
+    font-size: 19.8px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    margin: 1% auto;
+    color: #737373;
+}
+.service_section video{
+    width: 60%;
+    height: 40%;
+    margin-top: 2.5%;
+    overflow: h;
+    object-fit: cover;
+}
 
+.control{
+    position: relative;
+}
+.play{
+    background-image: url("./icons/play.svg");
+    background-repeat: no-repeat;
+    width:19%;
+    height:18%;
+    position:absolute;
+    left:0.5%;
+    right:0%;
+    top: 18.5%;
+    bottom:0%;
+    margin:auto;
+    background-size:contain;
+    background-position: center;
+}
+video[poster]{
+    width: 45%;
+    object-fit: cover;
+}
+.hidden{
+    display: hidden;
+}
 /* Contact Us */
 .contactus{
     padding-top: 7%;
@@ -177,6 +243,7 @@ button{
 .facebookInsta img{
     width: 30px;
     height: 30px;
+    padding-right: 2%;
 }
 .underline{
     background-color: #1AC073;
@@ -187,3 +254,4 @@ button{
 .underline hr{
     color: white;
 }
+
