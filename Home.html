@@ -7,11 +7,11 @@
     <title>Foodie</title>
     <link rel = "shortcut icon" href ="/Images/favicon1.png" type="image/x-icon">
     <link rel = "stylesheet" type = "text/css" href="./Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <!-- header -->
-    <div>
-        <div class="header">
+        <header class="header">
             <!-- Navbar -->
             <div class = "navbar">
                 <!-- heading -->
@@ -20,23 +20,22 @@
                 </div>
 
                 <!-- option -->
-                <div class="option">
-                    <ul class="nav-option">
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Menu</li>
-                        <li>Blog</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
+                <nav class="nav-option">
+                        <a href="#">Home</a>
+                        <a href="#">About</a>
+                        <a href="#">Menu</a>
+                        <a href="#">Blog</a>
+                        <a href="#">Contact</a>
+                </nav>
 
                 <!-- Search & Cart -->
                 <div class="searchcart">
+                    <!-- <i class="fa fa-bars" id="menu-btn"></i> -->
                     <img src="./icons/Search.svg" alt="searching">
                     <img src="./icons/Cart.svg" alt="Added Items">
                 </div>
             </div>
-        </div>
+        </header>
 
         <!-- landing Section -->
         <div class="landing_section">
@@ -53,6 +52,24 @@
         </div>
         <!-- Kitchen Section -->
        
+
+
+        <!-- Service Section -->
+        <div class="service_section">
+            <div class="container">
+                <h1>We are providing best</h1>
+                <h1>home cooked food delivery service.</h1>
+                <p>Away from home and craving the tasty homemade recipes? Choose from a selection of our delicious home cooked dishes</p>
+                <div class="controls">
+                    <video id="video" class="video" width="320" height="240">
+                        <source src="./FoodVideo.mp4" type="video/mp4">
+                    </video>
+                    <div class="play"></div>
+                </div>
+                <script src="video.js"></script>
+            </div>
+        </div>
+
 
         <!-- Contact Us Section -->
         <div class="contactus">
@@ -77,11 +94,11 @@ or want to become a seller?</pre></h1>
             </div>
             <div class="footeroption">
                 <ul class="nav-option">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li>Menu</li>
-                    <li>Blog</li>
-                    <li>Contact</li>
+                    <a href="#">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Menu</a>
+                    <a href="#">Blog</a>
+                    <a href="#">Contact</a>
                 </ul>
             </div>
             <div class="facebookInsta">
@@ -92,6 +109,6 @@ or want to become a seller?</pre></h1>
         <div class="underline">
             <hr>
         </div>
-    </div>
+    <script src="Home.js"></script>
 </body>
 </html>
