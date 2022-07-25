@@ -11,6 +11,15 @@
 </head>
 <body>
     <!-- header -->
+    <div class="functionality">
+        <div class="addCart hidden">
+            <div class="cartimage">
+                <img src="./icons/Cart.svg" alt=""/>
+            </div>
+            <h1>Cart is Empty</h1>
+            <p>Add some items to the cart to checkout</p>
+            <button id="btn-back">Back to Menu</button>
+        </div>
         <header class="header">
             <!-- Navbar -->
             <div class = "navbar">
@@ -30,9 +39,9 @@
 
                 <!-- Search & Cart -->
                 <div class="searchcart">
-                    <!-- <i class="fa fa-bars" id="menu-btn"></i> -->
+                    <i class="fa fa-bars" id="menu-btn"></i>
                     <img src="./icons/Search.svg" alt="searching">
-                    <img src="./icons/Cart.svg" alt="Added Items">
+                    <img src="./icons/Cart.svg" alt="Added Items" id="addCartItem">
                 </div>
             </div>
         </header>
@@ -115,6 +124,7 @@ or want to become a seller?</pre></h1>
         <div class="underline">
             <hr>
         </div>
+    </div>
     <script src="Home.js"></script>
 </body>
 </html>
