@@ -11,6 +11,9 @@
 .hidden{
     display: none;
 }
+.blur{
+    background-color: black(0.35);
+}
 /* Add Cart */
 .addCart{
     position: absolute;
@@ -18,7 +21,7 @@
     margin: 7.5% 4.8%;
     text-align: center;
     border-radius: 30px;
-    background-color: #ffffff;
+    background-color: #F7F8FA;
     box-shadow: 1px 1px #EDEDED, -1px -1px #EDEDED;
     z-index: 1;
 }
@@ -52,6 +55,59 @@
     font-size: 1.2rem;
     padding: 1.4% 0px;
     margin-bottom: 26%;
+    cursor: pointer;
+}
+/* request dish */
+.reqdish{
+    position: absolute;
+    width: 90.5vw;
+    margin: 7.5% 4.8%;
+    border-radius: 30px;
+    background-color: #F7F8FA;
+    box-shadow: 1px 1px #EDEDED, -1px -1px #EDEDED;
+    z-index: 1;
+}
+.reqdish h1{
+    text-align: center;
+    margin-top: 5.3%;
+    margin-left: -.3%;
+    font-size: 3.1rem;
+    font-weight: 800;
+    margin-bottom: 7.1%;
+}
+.reqdish p{
+    font-size: 1.3rem;
+    margin-bottom: .3%;
+    margin-left: 7.8%;
+}
+.reqdish input{
+    width: 80%;
+    margin-left: 7.8%;
+    font-size: 1.1rem;
+    padding: 1.1rem;
+    margin-bottom: 2.75%;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+}
+.reqdish button{
+    margin-top: 6.5%;
+    padding: 1.5% 1%;
+    margin-bottom: 5.5%;
+}
+#cancel{
+    margin-left: 33%;
+    width: 16%;
+    margin-right: 2%;
+    background-color: white;
+    border: 1px solid #1AC073;
+    color: #1AC073;
+    cursor: pointer;
+}
+#submit{
+    width: 15.5%;
+    background-color: #1AC073;
+    color: white;
     cursor: pointer;
 }
 
@@ -244,7 +300,6 @@
     font-weight: 700;
     font-size: 58px;
     letter-spacing: 1px;
-    line-height: 65px;
     color: #252B42;
 }
 .service_section p{
@@ -287,6 +342,9 @@ video[poster]{
 }
 .hidden{
     display: hidden;
+}
+#reqDish{
+    cursor: pointer;
 }
 
 /* Contact Us */
@@ -373,3 +431,6 @@ button{
     color: white;
 }
 
+.blur{
+    opacity: 0.35;
+}
