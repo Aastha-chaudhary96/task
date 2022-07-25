@@ -11,15 +11,26 @@
 </head>
 <body>
     <!-- header -->
-    <div class="functionality">
-        <div class="addCart hidden">
-            <div class="cartimage">
-                <img src="./icons/Cart.svg" alt=""/>
-            </div>
-            <h1>Cart is Empty</h1>
-            <p>Add some items to the cart to checkout</p>
-            <button id="btn-back">Back to Menu</button>
+     <div class="addCart hidden">
+        <div class="cartimage">
+            <img src="./icons/Cart.svg" alt=""/>
         </div>
+        <h1>Cart is Empty</h1>
+        <p>Add some items to the cart to checkout</p>
+        <button id="btn-back">Back to Menu</button>
+    </div>
+    <div class="reqdish hidden">
+        <h1>Request a Dish</h1>
+        <p>Name*</p>
+        <input type="text" placeholder="Enter name of the dish">
+        <p>Upload an image</p>
+        <input type="text" placeholder="Paste a URL">
+        <div class="reqbtn">
+            <span><button id="cancel">Cancel</button></span>
+            <span><button id="submit">Submit Request</button></span>
+        </div>
+    </div>
+    <div class="functionality">
         <header class="header">
             <!-- Navbar -->
             <div class = "navbar">
@@ -66,6 +77,7 @@
 
         </div>
         <h1>Popular Items</h1>
+        <button id="reqDish">Request a Dish</button>
        </div>
 
 
