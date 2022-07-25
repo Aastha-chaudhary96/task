@@ -43,7 +43,7 @@ let kitchen = [
         rating: '4.2',
     },
     {
-        image:'./Images/pizza1.png',
+        image:'./Images/unsplash_MqT0asuoIcU.png',
         name: 'Home made pizza',
         price: '190',
         timing: '25-45 min',
