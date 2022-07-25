@@ -1,16 +1,30 @@
 // Add Cart
 let addcart = document.querySelector('.addCart');
+let dish = document.querySelector('.reqdish');
 
 document.querySelector('#addCartItem').addEventListener('click',function(){
-    addcart.classList.remove('hidden');
-    addcart.style.backdropFilter= "blur(3px)";
-    document.querySelector('.functionality').style.backgroundColor= "rgba(0, 0, 0, 0.6)";
+    addcart.classList.remove('hidden'); 
+    document.querySelector('.functionality').classList.add('blur');
 });
 
 document.querySelector('#btn-back').addEventListener('click',function(){
     addcart.classList.add('hidden');
+    document.querySelector('.functionality').classList.remove('blur');
 });                                                                     
 
+// Request Dish
+document.querySelector('#reqDish').addEventListener('click',function(){
+    dish.classList.remove('hidden');
+    document.querySelector('.functionality').classList.add('blur');
+});
+document.querySelector('#cancel').addEventListener('click',function(){
+    dish.classList.add('hidden');
+    document.querySelector('.functionality').classList.remove('blur');
+});
+document.querySelector('#submit').addEventListener('click',function(){
+    dish.classList.add('hidden');
+    document.querySelector('.functionality').classList.remove('blur');
+});
 
 /* Data */
 let kitchen = [
@@ -29,7 +43,7 @@ let kitchen = [
         rating: '4.2',
     },
     {
-        image:'./Images/unsplash_MqT0asuoIcU.png',
+        image:'./Images/pizza1.png',
         name: 'Home made pizza',
         price: '190',
         timing: '25-45 min',
