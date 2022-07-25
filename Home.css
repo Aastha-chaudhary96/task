@@ -8,6 +8,53 @@
     font-weight: 400;
     overflow-x: hidden;
 }
+.hidden{
+    display: none;
+}
+/* Add Cart */
+.addCart{
+    position: absolute;
+    width: 90.5vw;
+    margin: 7.5% 4.8%;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #ffffff;
+    box-shadow: 1px 1px #EDEDED, -1px -1px #EDEDED;
+    z-index: 1;
+}
+.cartimage{
+    padding: 24% 28%;
+    padding-bottom: 3.5%;
+}
+.addCart img{
+    width: 36%;
+    height:36%;
+    fill: #5b5757;
+}
+.addCart h1{
+    position: relative;
+    color: black;
+    left: -.5%;
+    font-size: 3.1rem;
+    margin-bottom: .7%;
+    letter-spacing: -0.012em;
+}
+.addCart p{
+    position: relative;
+    left: -.5%;
+    color:#AAA7A7;
+    font-size: 1.9rem;
+    letter-spacing: -0.012em;
+}
+.addCart button{
+    width: 16%;
+    margin-top: 4%;
+    font-size: 1.2rem;
+    padding: 1.4% 0px;
+    margin-bottom: 26%;
+    cursor: pointer;
+}
+
 /* header - Section ( N a v b a r ) */
 .header{
     position: absolute;
@@ -50,6 +97,7 @@
     margin-left:  auto;
     margin-right: 9%;
     margin-top: 0.5%;
+    cursor: pointer;
 }
 .searchcart i{
     transform: translate(-50%,-30%);
