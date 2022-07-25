@@ -6,6 +6,7 @@
     box-sizing: border-box;
     font-family: 'Roboto';
     font-weight: 400;
+    overflow-x: hidden;
 }
 /* header - Section ( N a v b a r ) */
 .header{
@@ -15,13 +16,11 @@
     margin-left: 10%;
     background: #1AC073;
     color: white;
-    overflow: hidden;
 }
 .navbar{
     position: absolute;
     display: flex;
     width: 100%;
-    overflow: hidden;
     top: 3.2rem;
 }
 .logo {
@@ -115,6 +114,73 @@
 }
 
 /* kitchen section */
+.kitchen-section{
+    background: #F7F8FA;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-right: 10%;
+
+}
+.kitchen-section h1{
+    font-weight: 800;
+    font-size: 40px;
+    margin-bottom: 5%;
+}
+.food-items{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-row-gap: 5%;
+    grid-column-gap: 2%;
+    grid-auto-rows: minmax(min-content, max-content);
+}
+.card{
+    border-radius: 10px;
+    background-color: #ffffff;   
+    overflow: hidden; 
+    box-shadow: 1px 1px 2px rgba(187, 187, 187, 0.25);
+}
+.card img{
+    width: 100%;
+}
+.item-info{
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 5%;
+}
+.item-info h4{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.item-info p{
+    text-align: right;
+    font-size: 1.3rem;
+}
+.additionalInfo{
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+#rating,#time{
+    margin-right: 10px;
+    background-color: #F7F8FA;
+    border-radius: 10px;
+    padding: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+#rating{
+    box-shadow: 1px 1px #F7F8FA , -1px -1px #F7F8FA;
+}
+#time{
+    box-shadow: 3px 1px rgba(74, 80, 86, 0.8), -3px 1px rgba(74, 80, 86, 0.8);
+}
+#addToCart{
+    position: relative;
+    margin-left: auto;
+    margin-right: 0px;
+}
+
+
 
 /* Service Section */
 .service_section{
@@ -174,18 +240,21 @@ video[poster]{
 .hidden{
     display: hidden;
 }
+
 /* Contact Us */
+
 .contactus{
+    position: relative;
     padding-top: 7%;
-    padding-bottom: 7%;
+    padding-bottom: 6%;
     padding-left: 10%;
     padding-right: 3%;
     background: #F7F8FA;
     display: flex;
 }
 .queryinfo{
+    overflow: hidden;
     width: 70%;
-    line-height: 2rem;
 }
 
 .queryinfo p{
@@ -219,12 +288,13 @@ button{
 }
 
 .contactimage{
+    padding: 10px;
     margin-left: 0px;
     margin-right: auto;
 }
 .contactimage img{
-    width: 604px ;
-    height: 503px;
+    width: 600px ;
+    height: 550px;
 }
  /* footer */
 
