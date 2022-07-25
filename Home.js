@@ -1,4 +1,18 @@
- /* Data */
+// Add Cart
+let addcart = document.querySelector('.addCart');
+
+document.querySelector('#addCartItem').addEventListener('click',function(){
+    addcart.classList.remove('hidden');
+    addcart.style.backdropFilter= "blur(3px)";
+    document.querySelector('.functionality').style.backgroundColor= "rgba(0, 0, 0, 0.6)";
+});
+
+document.querySelector('#btn-back').addEventListener('click',function(){
+    addcart.classList.add('hidden');
+});                                                                     
+
+
+/* Data */
 let kitchen = [
     {
         image:'./Images/unsplash_MqT0asuoIcU.png',
@@ -15,7 +29,7 @@ let kitchen = [
         rating: '4.2',
     },
     {
-        image:'./Images/unsplash_33GPuoFI7v8.png',
+        image:'./Images/unsplash_MqT0asuoIcU.png',
         name: 'Home made pizza',
         price: '190',
         timing: '25-45 min',
